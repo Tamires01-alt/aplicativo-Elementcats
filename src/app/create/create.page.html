@@ -12,13 +12,11 @@
     </ion-item>
     <ion-item>
       <ion-label>Favorita</ion-label>
-      <ion-toggle slot="start" [(ngModel)]="song.favorite" ></ion-toggle>
+      <ion-toggle slot="start" [(ngModel)]="song.favorite"></ion-toggle>
     </ion-item>
-    <ion-button expand="block" (click)= "save()">
-    <ion-icon slot="start" name="add" ></ion-icon>
+    <ion-button expand="block" (click)="save()">
+      <ion-icon slot="start" name="add"></ion-icon>
       Salvar
-  </ion-button>
- 
-     
+    </ion-button>
   </ion-list>
 </ion-content>

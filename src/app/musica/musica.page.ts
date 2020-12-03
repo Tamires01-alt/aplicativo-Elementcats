@@ -8,17 +8,17 @@ import { SongService } from '../services/song.service';
   templateUrl: './musica.page.html',
   styleUrls: ['./musica.page.scss'],
 })
-export class MusicaPage  {
-  
-public songs = this.songService.allSongs();
-   
+export class MusicaPage {
 
-  constructor(private songService: SongService ) { 
+  public songs = this.songService.allSongs();
+
+
+  constructor(private songService: SongService) {
 
   }
 
-  public find(id: number){
-    
-  }  
+  public find(id: number) {
+
+  }
 
 }

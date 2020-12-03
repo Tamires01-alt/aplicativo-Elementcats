@@ -1,20 +1,20 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color=primary>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/status"></ion-back-button>
+    </ion-buttons>
     <ion-title>Comentarios dos jogadores </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card *ngFor="let u of commit"  >
-
+  <ion-card *ngFor="let u of commit">
     <ion-card-header>
       <ion-card-subtitle>{{u.email}}</ion-card-subtitle>
       <ion-card-title>{{u.name}}</ion-card-title>
     </ion-card-header>
-
     <ion-card-content>
-       
     </ion-card-content>
   </ion-card>
 

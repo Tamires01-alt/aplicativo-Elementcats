@@ -9,21 +9,21 @@ import { Song, SongService } from '../services/song.service';
 })
 export class CreatePage implements OnInit {
 
-  public song: Song; 
+  public song: Song;
 
   constructor(
-   private songService: SongService,
-   private navCtrl: NavController
+    private songService: SongService,
+    private navCtrl: NavController
 
-   ) { }
+  ) { }
 
   ngOnInit() {
-      this.song = this.songService.empty(); 
+    this.song = this.songService.empty();
   }
 
-  save () {
-    this.songService.create(this.song); 
-    this.navCtrl.back(); 
+  save() {
+    this.songService.create(this.song);
+    this.navCtrl.back();
   }
 
 }

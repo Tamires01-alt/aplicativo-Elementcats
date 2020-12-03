@@ -20,19 +20,19 @@ export interface comentario {
 })
 export class BuscaPage implements OnInit {
 
-  public pergunta = ''; 
-  public commit: comentario [];   
+  public pergunta = '';
+  public commit: comentario[];
 
-  constructor(private http: HttpClient) { 
-      this.chamarHttp(); 
+  constructor(private http: HttpClient) {
+    this.chamarHttp();
 
   }
-        
-    async chamarHttp() {
-     const url = 'https://jsonplaceholder.typicode.com/comments'; 
-     this.commit = (await this.http.get(url).toPromise()) as comentario[];
-    }
-       
+
+  async chamarHttp() {
+    const url = 'https://jsonplaceholder.typicode.com/comments';
+    this.commit = (await this.http.get(url).toPromise()) as comentario[];
+  }
+
   ngOnInit() {
   }
 

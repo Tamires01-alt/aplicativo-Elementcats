@@ -9,7 +9,7 @@ describe('SquareComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SquareComponent ],
+      declarations: [SquareComponent],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 

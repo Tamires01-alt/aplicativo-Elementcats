@@ -1,8 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar color=primary>
-   
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
     <ion-title>ElemenCats</ion-title>
-    
+
   </ion-toolbar>
 </ion-header>
 
@@ -13,14 +17,12 @@
       <ion-card-subtitle>Jogada: {{ player }}</ion-card-subtitle>
       <ion-card-title *ngIf="winner">O jogador {{ winner }} venceu!</ion-card-title>
     </ion-card-header>
-  
+
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col size="4" *ngFor="let val of squares; let i = index">
-            <app-square        
-                [value]="val"
-                (click)="makeMove(i)"> 
+            <app-square [value]="val" (click)="makeMove(i)">
             </app-square>
           </ion-col>
         </ion-row>
@@ -32,10 +34,11 @@
 
 
   <ion-button routerLink="/regras" expand="block">Vizualizar Ranking</ion-button>
-  <ion-button routerLink="/perfil" expand="block">Perfil</ion-button>
-  
+  <ion-button routerLink="/perfil" expand="block">Alterar Perfil</ion-button>
+  <ion-button routerLink="/musica" expand="block">Adicionar Nota do Jogo</ion-button>
 
-  
+
+
 
 
 
