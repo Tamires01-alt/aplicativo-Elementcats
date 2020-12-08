@@ -1,4 +1,4 @@
-# aplicativo-Elementcats
+# Aplicativo-Elementcats
 
 Um aplicativo Desenvolvido com o ionic framework, com a implementação de linguagens  como HTML, CSS, Angular e typescript,  com implementações como armazenamento off line, e API Rest.  
  
